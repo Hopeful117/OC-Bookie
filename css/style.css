@@ -46,7 +46,7 @@ a {
     object-fit: cover;
 }
 
-.card-title {
+.card-title, nav a{
     font-size: 16px;
 }
 
@@ -120,6 +120,41 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+header{
+    display:flex;
+    justify-content: space-between;
+    height:80px;
+    max-width: 1440px;
+    align-items: center;
+}
+
+#logo{
+    width:61.089656829833984px;
+    height:19px;
+
+   
+   
+    
+
+}
+
+nav{
+    display:flex;
+    gap:68px;
+}
+
+nav a{
+    padding-top:35px;
+    padding-bottom:35px;
+    
+}
+
+nav a:hover{
+    color:#0065FC;
+    border-top: #0065FC solid 2px;
+}
+
 
 
 
