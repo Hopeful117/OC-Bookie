@@ -447,6 +447,23 @@ justify-content: space-between;
 
 }
 
+/****** Footer ***********/
+
+footer{
+    background-color: var(--main-bg-color);
+    display:flex;
+    justify-content:space-between ;
+}
+
+footer section{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    padding:20px;
+    
+   flex-grow:1
+}
+
    
     
 
