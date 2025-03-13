@@ -70,7 +70,11 @@ a {
     color: var(--main-bg-color)
 }
 /****** Section recherche ***********/
+
+
 #search-bar{
+
+
     Height: 49px;
     width: 377px;
    
@@ -179,9 +183,6 @@ input:focus{
 
 
 
-
-
-
 .btn-filter:hover{
     background-color: var(--filter-bg-color);
 }
@@ -191,6 +192,7 @@ input:focus{
     display:flex;
     gap:10px;
     align-items: center;
+    margin-bottom: 35px;
     
 }
 
@@ -209,12 +211,20 @@ input:focus{
     left:10px;
 }
 
+#info p{
+    margin: 0;
+    
+}
+
+
+
 /****** Header ***********/
 header{
    
     display:flex;
     justify-content: space-between;
     height:80px;
+    
    
   
  
@@ -255,6 +265,16 @@ nav a:hover{
     color:var(--main-color);
     border-top: var(--main-color) 2px solid;
 }
+/****** Titre ***********/
+#main-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#main-title p, #main-title h2 {
+    margin: 0;
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -273,6 +293,9 @@ nav a:hover{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .hebergements-card{
  display: grid;
@@ -318,9 +341,7 @@ nav a:hover{
     object-fit: cover ;
 
 }
-.hebergements h2{
-    margin-bottom: 33px;
-}
+
 
 .hebergements .card-content{
    
@@ -382,6 +403,49 @@ nav a:hover{
     margin-bottom: 5px;
 }
 
+
+
+/****** Activités ***********/
+.activites{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+   
+   
+    
+}
+
+.activites-cards{
+display: flex;
+justify-content: space-between;
+
+}
+
+.activites .card {
+    height:439px;
+    border-radius: 20px;
+   
+    width:fit-content
+
+
+}
+
+.activites img{
+    width:297.5px;
+    height:380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+   
+   
+
+}
+
+.activites h3{
+   
+    margin-left:10px;
+
+}
 
    
     
