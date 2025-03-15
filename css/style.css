@@ -175,9 +175,15 @@ input:focus{
     padding:4px 19px 4px 19px;
     display: flex;
     align-items: center;
-    gap:5px;
+    gap:10px;
 
 
+}
+
+#filter-btn{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
 }
 
 
@@ -411,40 +417,63 @@ nav a:hover{
     flex-direction: column;
     padding: 30px;
     gap: 30px;
+    
+    
+ 
    
    
     
 }
 
 .activites-cards{
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap:30px;
+
+
+
 
 }
 
 .activites .card {
-    height:439px;
-    border-radius: 20px;
    
-    width:fit-content
+    border-radius: 20px;
+  
+    display:flex;
+    flex-direction: column;
+    
+    
+
+   
+   
+  
 
 
 }
 
 .activites img{
-    width:297.5px;
+    
     height:380px;
-    object-fit: cover;
+    width:100%;
+    
+
     border-radius: 20px 20px 0 0;
+    object-fit:cover;
    
    
 
 }
 
-.activites h3{
-   
-    margin-left:10px;
+.activites .card-content{
+    
+    padding: 20px 19px 20px 19px;
+    gap:10px;
+    display:flex;
 
+}
+
+.activites h3{
+    margin:0;
 }
 
 /****** Footer ***********/
@@ -507,9 +536,229 @@ footer section{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    #filter{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    #info-group{
+        gap:20px;
+    }
+    .activites img{
+        
+      
+        
+       
+        height: 200px;
+       
+    
+     
+    }
+  
+    
+    .activites-cards{
+       
+       
+     
+      
+      gap: 30px;
+     
+      
+    
+      
+     
+    }
+   
+
+    
+    .activites .card-content{
+     
+        display: flex;
+        align-items: center;
+       
+        box-sizing: border-box;
+        font-size: 14px;
+
+        
+       
+       height: 70px;
+       
+    }
+
+    .activites .card {
+        width:100%;
+        box-sizing: border-box;
+    }
+
+
+
+   
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+   .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    
+    
+  
+    
+   
+    gap:35px;
+
+   } 
+    
+    header{
+        flex-direction: column;
+        align-items: center;
+        border-bottom:solid 2px var(--main-bg-color);
+        padding-bottom: 20px;
+      
+        width: 100%;
+        
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap:0px;
+        
+    }
+
+    nav a {
+        
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a:hover{
+        color:var(--main-color);
+        border-bottom: var(--main-color) 2px solid;
+       border-top:none;
+        padding-bottom:16px; 
+       
+    }
+
+    #info-group{
+       
+      width: 100%;
+       
+        padding-right:20px;
+        padding-left:20px;
+        box-sizing: border-box;
+       
+        
+        
+    }
+
+
+
+    #main-title{
+       
+        width:100%;
+      
+    }
+
+    #filter-btn{
+      
+       display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      
+        
+
+    }
+
+  
+    #info{
+        width:100%;
+       
+    }
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    .populaires{
+       
+        width:100%;
+        margin-top: 0;
+        
+        
+
+        
+    }
+
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+     
+      
+        
+        
+    }
+
+    .populaires-cards .card-content{
+        width:223.33px;
+        height:136px;
+     
+        box-sizing: border-box;
+        
+       
+       
+    }
+
+    .populaires-cards .card {
+        
+        
+        height:146px;
+
+        
+     
+     
+        box-sizing: border-box;
+
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+
+    .hebergements-card{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .hebergements{
+        background-color: white !important;
+    }
+
+
+    .activites-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+   
+
+   
+
+    
+
+
+    
+
+
+    
 }
