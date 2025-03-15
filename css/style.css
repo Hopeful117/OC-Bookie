@@ -77,6 +77,7 @@ a {
 
     Height: 49px;
     width: 377px;
+    
    
   
     
@@ -84,6 +85,9 @@ a {
     
     
 
+}
+#search-logo{
+    display: none;
 }
 form{
     display:flex;
@@ -580,6 +584,7 @@ footer section{
        
         box-sizing: border-box;
         font-size: 14px;
+        padding: 20px 19px 20px 19px;
 
         
        
@@ -666,12 +671,19 @@ footer section{
 
     #filter-btn{
       
-       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
+       display:flex;
+       flex-wrap: wrap;
+       gap:20px;
+       justify-content: flex-start;
+     
+      max-width: 100%;
       
         
 
+    }
+
+    .btn-filter{
+        flex:1 1 auto;
     }
 
   
@@ -752,9 +764,26 @@ footer section{
     }
    
 
-   
+    #search-bar{
+        max-width: 100%;
+        
 
-    
+        
+
+    }
+
+    #btn-text{
+        display: none;
+    }
+
+    #search-logo{
+        display: inline;
+        color:white;
+    }
+
+    #search-btn{
+        border-radius: 15px;
+    }
 
 
     
