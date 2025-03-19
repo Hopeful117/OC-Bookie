@@ -85,6 +85,7 @@ a {
     
 
 }
+/* Dans la version desktop et tablette on n'affiche pas la loupe */
 #search-logo{
     display: none;
 }
@@ -93,7 +94,7 @@ form{
     justify-content: space-between;
     gap:24px;
     align-items: center;
-    flex-wrap: nowrap;
+   
 }
 
 input{
@@ -110,6 +111,7 @@ input{
     
     
 }
+/* Quand l'utilisateur clic sur la barre de recherche */
 input:focus{
     border:none;
     outline:none;
@@ -737,7 +739,7 @@ footer section{
         flex-direction: column;
     }
 
-
+/* Ici on force le changement de la couleur pour la partie hébergements */
     .hebergements{
         background-color: white !important;
     }
@@ -761,6 +763,7 @@ footer section{
         
 
     }
+    /* On cache le texte du boutton et on affiche le logo */
 
     #btn-text{
         display: none;
@@ -770,6 +773,7 @@ footer section{
         display: inline;
         color:white;
     }
+    /********************************************************/
 
     #search-btn{
         border-radius: 15px;
@@ -779,6 +783,7 @@ footer section{
         
        
     }
+    /* Ici on utilise min-max pour que les boutons ne soit pas trop déformés sur les très petits écrans */
 
     #filter-btn{
      
