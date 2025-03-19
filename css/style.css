@@ -24,11 +24,7 @@ body {
     margin: 0;
 }
 
-#info-group{
-    display:flex;
-    flex-direction: column;
-    gap:35px;
-}
+
 
 .main-container {
     width: 100%;
@@ -69,6 +65,9 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+
+
 /****** Section recherche ***********/
 
 
@@ -197,6 +196,11 @@ input:focus{
     background-color: var(--filter-bg-color);
 }
 /****** Info ***********/
+#info-group{
+    display:flex;
+    flex-direction: column;
+    gap:35px;
+}
 
 #info{
     display:flex;
@@ -605,6 +609,7 @@ footer section{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
    .main-container{
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -628,7 +633,7 @@ footer section{
         
     }
     nav{
-        display: flex;
+       
         width: 100%;
         justify-content: center;
         gap:0px;
@@ -642,7 +647,7 @@ footer section{
     }
 
     nav a:hover{
-        color:var(--main-color);
+     
         border-bottom: var(--main-color) 2px solid;
        border-top:none;
         padding-bottom:16px; 
@@ -669,22 +674,7 @@ footer section{
       
     }
 
-    #filter-btn{
-      
-       display:flex;
-       flex-wrap: wrap;
-       gap:20px;
-       justify-content: flex-start;
-     
-      max-width: 100%;
-      
-        
-
-    }
-
-    .btn-filter{
-        flex:1 1 auto;
-    }
+   
 
   
     #info{
@@ -706,7 +696,7 @@ footer section{
 
 
     .populaires-cards {
-        display: flex;
+    
         flex-direction: column;
         width:100%;
      
@@ -784,17 +774,30 @@ footer section{
     #search-btn{
         border-radius: 15px;
     }
+    #filter{
+        max-width: 100%;
+        
+       
+    }
 
     #filter-btn{
      
         display: grid;
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: repeat(2, minmax(100px, 1fr)); 
+       
+        max-width:100%;
+    
+      
     
 
     }
 
     .btn-filter{
+        
         justify-content: center;
+        max-width: 100%;
+      
+       
     }
 
 
@@ -803,3 +806,4 @@ footer section{
 
     
 }
+
